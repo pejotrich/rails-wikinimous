@@ -1,0 +1,21 @@
+<div id="header">
+  <div><h5><%= link_to "Wikinimous", articles_path %></h5></div>
+  <div><h6><%= link_to "New article", new_article_path%> </h6></div>
+</div>
+
+<% trash = fa_icon "trash" %>
+<% edit = fa_icon "edit" %>
+
+<div>
+  <div class="headline">
+    <h2><%= @article.title %> <%= link_to edit, edit_article_path %>
+      <%= link_to trash,
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+      </h2>    
+  </div>
+  <div>
+    <p class="center-block"> <%= @article.content %></p>
+  </div>
+</div>

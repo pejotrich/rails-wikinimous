@@ -1,0 +1,8 @@
+<div id="header">
+  <div><h5><%= link_to "Wikinimous", articles_path %></h5></div>
+  <div><h6><%= link_to "New article", new_article_path%> </h6></div>
+</div>
+<div class="center-block">
+<h2>New article</h2>
+<div><%= render "form", article: @article %></div>
+</div>

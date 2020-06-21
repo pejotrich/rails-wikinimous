@@ -1,0 +1,69 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+
+#header {
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(236, 236, 236);
+  border-radius: 4px;
+  margin: 0;
+  color: gray;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-decoration: none;
+    a {
+      color: gray;
+    }
+
+    a:hover {
+      color: rgb(180, 180, 180);
+      text-decoration: none;
+    }
+}
+
+.center {
+  text-align: center;
+}
+
+
+.headline {
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: rgb(226, 224, 224);
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.center-block {
+  text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 8px;
+
+}
+
+.button {
+  width: fit-content;
+}
+
+.content-block {
+  textarea{
+    width: 100%;
+    height: 200px;
+  
+  }
+}
